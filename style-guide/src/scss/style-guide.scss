@@ -12,6 +12,7 @@ $color-5: #ECECEC; // light grey
 $color-6: #ffffff; // white
 
 
+
 //$color-1: #F78888; // Mauve 
 //$color-2: #F3D250; // Yellow
 //$color-3: #ECECEC; // ligh grey
@@ -24,8 +25,8 @@ $success: #6fce72; // green
 $alert: $color-3; // red
 
 // fonts
-$primary-font: 'Merriweather', serif;
-$secondary-font: 'Open Sans', sans-serif;
+$primary-font: 'liberation-sans', sans-serif;
+$secondary-font: 'liberation-serif', serif;
 
 /* -------------------------------- 
 
@@ -58,6 +59,39 @@ xPatterns
 xNavigation 
 
 -------------------------------- */
+
+.cd-navigation {
+    
+    a:link, a:visited{
+        color: $color-2;
+    }
+    a:hover {
+            text-decoration: underline;
+        }
+        
+        a:active {
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none;
+        }
+    .cd-primary-nav  {
+        background-color: $color-2;
+        padding: 1em;
+        li {
+           padding: .25em; 
+        }
+        
+        a:link, a:visited {
+            color: $color-6;
+        } 
+    }
+    
+    .cd-secondary-nav {
+        a:link, a:visited {
+            color: darken($color-2, 60%);
+        }
+    }
+}
 
 header {
   background-color: $color-2;
@@ -213,7 +247,38 @@ p {
     line-height: 1.6;
   }
 }
+/* -------------------------------- 
 
+xBranding 
+
+-------------------------------- */
+.main-logo {
+    color: darken($color-2, 20);
+}
+.logo1 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.logo2 {
+    font-weight: bold;
+    font-size: 2.5em;
+    color: lighten($color-2, 10);
+}
+
+.center-align {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    margin-top: -25px;
+}
+
+
+.vertical-text {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+}
 /* -------------------------------- 
 
 xButtons 

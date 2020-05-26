@@ -81,6 +81,31 @@ xPatterns
 xNavigation 
 
 -------------------------------- */
+.cd-navigation a:link, .cd-navigation a:visited {
+  color: #5DA2D5;
+}
+.cd-navigation a:hover {
+  text-decoration: underline;
+}
+.cd-navigation a:active {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+.cd-navigation .cd-primary-nav {
+  background-color: #5DA2D5;
+  padding: 1em;
+}
+.cd-navigation .cd-primary-nav li {
+  padding: 0.25em;
+}
+.cd-navigation .cd-primary-nav a:link, .cd-navigation .cd-primary-nav a:visited {
+  color: #ffffff;
+}
+.cd-navigation .cd-secondary-nav a:link, .cd-navigation .cd-secondary-nav a:visited {
+  color: black;
+}
+
 header {
   background-color: #5DA2D5;
 }
@@ -174,7 +199,7 @@ xTypography
 -------------------------------- */
 h1,
 h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "liberation-serif", serif;
   color: #5DA2D5;
 }
 
@@ -230,6 +255,39 @@ p a {
 
 /* -------------------------------- 
 
+xBranding 
+
+-------------------------------- */
+.main-logo {
+  color: #2a6fa2;
+}
+
+.logo1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.logo2 {
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #86b9e0;
+}
+
+.center-align {
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+  margin-top: -25px;
+}
+
+.vertical-text {
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+}
+
+/* -------------------------------- 
+
 xButtons 
 
 -------------------------------- */
@@ -238,7 +296,7 @@ xButtons
   box-shadow: none;
   border-radius: 0.25em;
   font-size: 1.4rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "liberation-serif", serif;
   color: #ECECEC;
   padding: 0.6em 2.2em;
   cursor: pointer;
@@ -445,7 +503,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Merriweather", serif;
+  font-family: "liberation-sans", sans-serif;
 }
 
 a {
@@ -457,7 +515,7 @@ img {
 }
 
 input, textarea, select {
-  font-family: "Merriweather", serif;
+  font-family: "liberation-sans", sans-serif;
   font-size: 1.6rem;
 }
 
